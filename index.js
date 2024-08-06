@@ -26,4 +26,14 @@ function contact(event) {
     setTimeout(() => {   
         console.log('it worked 1')
     }, 500);
+}
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open")
     }
+    isModalOpen = true;
+    document.body.classList += " modal--open";
+}
